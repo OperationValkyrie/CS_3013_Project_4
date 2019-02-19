@@ -1,0 +1,260 @@
+Instruction? Instruction? m
+Instruction? 1,map,1
+ERROR: Must contain 4 arguments.
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 1,map,1,1,1
+ERROR: Must contain 4 arguments.
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? -1,map,4,1
+Invalid Process ID
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 4,map,35,1
+Invalid Process ID
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 2,abc,42,76
+Invalid Instruction
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,map,-1,1
+Invalid Virtual Address for map
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,map,64,1
+Invalid Virtual Address for map
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,store,-1,1
+Invalid Virtual Address for store
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,store,16,1
+ERROR: PID 0 not yet mapped to physical frame
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,load,-1,1
+Invalid Virtual Address for load
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,load,16,1
+ERROR: PID 0 not yet mapped to physical frame
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,map,32,-1
+Invalid value for instruction map
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,map,32,2
+Invalid value for instruction map
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,store,8,-1
+Invalid value for store
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,store,8,256
+Invalid value for store
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,load,8,-1
+Invalid value for load
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 0,load,8,256
+Invalid value for load
+
+Instructions require 4 arguments in the format:
+  process_id,instruction_type,virtual_address,value
+  process_id       : (int) [0,3] the process id number
+  instruction_type : (string) the instruction type (map, store, load)
+  virtual_address  : (int) [0,63] for map, [0,16] for store and load - the virtual address of the instruction
+  value            : (int) [0,1] for map, [0,255] for store and load - value depending on the instruction
+See the README.txt for more details
+
+Instruction? 
+Instruction? 0,map,0,0
+Put table page for PID 0 into physical frame 0
+Mapped virtual address 0 (page 0) to physical frame 1
+  1   1   0   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,map,0,1
+ERROR: Physical Frame 0 already allocated to PID 0 page table
+  1   1   0   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 1,map,0,1
+ERROR: Physical Frame 0 already allocated to PID 0
+  1   1   0   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,map,16,1
+Changed permissions of PID 0 at physical frame 1 to 1
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,store,3,56
+Stored value 56 at virtual address 3 (physical address 19)
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 1,map,32,1
+Put table page for PID 1 into physical frame 2
+Mapped virtual address 0 (page 0) to physical frame 3
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 1,store,3,45
+Stored value 45 at virtual address 3 (physical address 51)
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,load,3,0
+The value 56 is at virtual address 3 (physical address 19)
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 1,load,3,0
+The value 45 is at virtual address 3 (physical address 51)
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,store,16,55
+ERROR: Virtual Address 16 out of virtual memory addresses of PID 0
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 1,store,32,56
+ERROR: Virtual Address 32 out of virtual memory addresses of PID 1
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,load,56,1
+ERROR: Virtual Address 56 out of virtual memory addresses of PID 0
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 1,load,45,1
+ERROR: Virtual Address 45 out of virtual memory addresses of PID 1
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  56   0   0   0   0   0   0   0   0   0   0   0   0 
+  3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0  45   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? e

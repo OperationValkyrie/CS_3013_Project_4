@@ -1,0 +1,57 @@
+Instruction? Instruction? m
+Instruction? 0,map,16,1
+Put table page for PID 0 into physical frame 1
+Mapped virtual address 0 (page 0) to physical frame 0
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,map,48,1
+Mapped virtual address 0 (page 1) to physical frame 3
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,map,32,1
+Mapped virtual address 0 (page 2) to physical frame 2
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,store,4,67
+Stored value 67 at virtual address 4 (physical address 4)
+  0   0   0   0  67   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Instruction? 0,store,24,56
+Stored value 56 at virtual address 24 (physical address 56)
+  0   0   0   0  67   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0  56   0   0   0   0   0   0   0 
+Instruction? 0,store,45,99
+Stored value 99 at virtual address 45 (physical address 45)
+  0   0   0   0  67   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   0 
+  0   0   0   0   0   0   0   0  56   0   0   0   0   0   0   0 
+Instruction? 0,load,4,1
+The value 67 is at virtual address 4 (physical address 4)
+  0   0   0   0  67   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   0 
+  0   0   0   0   0   0   0   0  56   0   0   0   0   0   0   0 
+Instruction? 0,load,24,1
+The value 56 is at virtual address 24 (physical address 56)
+  0   0   0   0  67   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   0 
+  0   0   0   0   0   0   0   0  56   0   0   0   0   0   0   0 
+Instruction? 0,load,45,1
+The value 99 is at virtual address 45 (physical address 45)
+  0   0   0   0  67   0   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   3   1   1   1   2   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0  99   0   0 
+  0   0   0   0   0   0   0   0  56   0   0   0   0   0   0   0 
+Instruction? e

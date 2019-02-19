@@ -1,0 +1,232 @@
+Instruction? Instruction? m
+Instruction? r
+Instruction? 0,map,1,1
+Put table page for PID 0 into physical frame 0
+Mapped virtual address 0 (page 0) to physical frame 1
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+0 -1 -1 -1 
+Reverse   :
+0 0 -1 -1 
+Instruction? 0,map,32,1
+Mapped virtual address 0 (page 1) to physical frame 2
+  1   1   1   1   2   1   1   1   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+0 -1 -1 -1 
+Reverse   :
+0 0 0 -1 
+Instruction? 0,map,48,1
+Mapped virtual address 0 (page 2) to physical frame 3
+  1   1   1   1   2   1   1   1   3   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+0 -1 -1 -1 
+Reverse   :
+0 0 0 0 
+Instruction? 0,store,5,55
+Stored value 55 at virtual address 5 (physical address 21)
+  1   1   1   1   2   1   1   1   3   1   1   1   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+0 -1 -1 -1 
+Reverse   :
+0 0 0 0 
+Instruction? 0,store,20,78
+Stored value 78 at virtual address 20 (physical address 36)
+  1   1   1   1   2   1   1   1   3   1   1   1   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0  78   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+0 -1 -1 -1 
+Reverse   :
+0 0 0 0 
+Instruction? 0,store,40,99
+Stored value 99 at virtual address 40 (physical address 56)
+  1   1   1   1   2   1   1   1   3   1   1   1   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0  78   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0 
+Registers :
+0 -1 -1 -1 
+Reverse   :
+0 0 0 0 
+Instruction? 1,map,32,1
+Moved frame 2 to swap slot 8
+Put table page for PID 1 into physical frame 2
+Moved frame 0 to swap slot 4
+Mapped virtual address 0 (page 0) to physical frame 0
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0 
+Registers :
+4 2 -1 -1 
+Reverse   :
+1 0 1 0 
+Instruction? 1,store,6,67
+Stored value 67 at virtual address 6 (physical address 6)
+  0   0   0   0   0   0  67   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0 
+Registers :
+4 2 -1 -1 
+Reverse   :
+1 0 1 0 
+Instruction? 0,load,5,1
+Moved frame 2 to swap slot 5
+Moved swap slot 4 to physical frame 2
+The value 55 is at virtual address 5 (physical address 21)
+  0   0   0   0   0   0  67   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  1   1   1   1   8   1   1   1   3   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0 
+Registers :
+2 5 -1 -1 
+Reverse   :
+1 0 0 0 
+Instruction? 0,load,20,1
+Moved frame 3 to swap slot 9
+Moved swap slot 8 to physical frame 3
+The value 78 is at virtual address 20 (physical address 52)
+  0   0   0   0   0   0  67   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0  55   0   0   0   0   0   0   0   0   0   0 
+  1   1   1   1   3   1   1   1   9   1   1   1   0   0   0   0 
+  0   0   0   0  78   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+2 5 -1 -1 
+Reverse   :
+1 0 0 0 
+Instruction? 0,load,40,1
+Moved frame 1 to swap slot 8
+Moved swap slot 5 to physical frame 1
+Moved frame 0 to swap slot 10
+Moved swap slot 9 to physical frame 0
+The value 99 is at virtual address 40 (physical address 8)
+  0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0 
+ 10   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  8   1   1   1   3   1   1   1   0   1   1   1   0   0   0   0 
+  0   0   0   0  78   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+2 1 -1 -1 
+Reverse   :
+0 1 0 0 
+Instruction? 1,load,6,1
+Moved frame 2 to swap slot 4
+Moved swap slot 10 to physical frame 2
+The value 67 is at virtual address 6 (physical address 38)
+  0   0   0   0   0   0   0   0  99   0   0   0   0   0   0   0 
+  2   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0  67   0   0   0   0   0   0   0   0   0 
+  0   0   0   0  78   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+4 1 -1 -1 
+Reverse   :
+0 1 1 0 
+Instruction? 2,map,0,1
+Moved frame 1 to swap slot 5
+Moved swap slot 4 to physical frame 1
+Moved frame 0 to swap slot 9
+Put table page for PID 2 into physical frame 0
+Moved frame 3 to swap slot 10
+Moved swap slot 5 to physical frame 3
+Moved frame 2 to swap slot 11
+Mapped virtual address 0 (page 0) to physical frame 2
+  2   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  8   1   1   1  10   1   1   1   9   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+ 11   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+1 3 0 -1 
+Reverse   :
+2 0 2 1 
+Instruction? 2,store,7,89
+Stored value 89 at virtual address 7 (physical address 39)
+  2   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  8   1   1   1  10   1   1   1   9   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0  89   0   0   0   0   0   0   0   0 
+ 11   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+1 3 0 -1 
+Reverse   :
+2 0 2 1 
+Instruction? 0,store,6,91
+Moved frame 0 to swap slot 6
+Moved swap slot 8 to physical frame 0
+Stored value 91 at virtual address 6 (physical address 6)
+  0   0   0   0   0  55  91   0   0   0   0   0   0   0   0   0 
+  0   1   1   1  10   1   1   1   9   1   1   1   0   0   0   0 
+  0   0   0   0   0   0   0  89   0   0   0   0   0   0   0   0 
+ 11   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+1 3 6 -1 
+Reverse   :
+0 0 2 1 
+Instruction? 0,store,24,61
+Moved frame 3 to swap slot 5
+Moved swap slot 6 to physical frame 3
+Moved frame 2 to swap slot 8
+Moved swap slot 10 to physical frame 2
+Stored value 61 at virtual address 24 (physical address 40)
+  0   0   0   0   0  55  91   0   0   0   0   0   0   0   0   0 
+  0   1   1   1   2   1   1   1   9   1   1   1   0   0   0   0 
+  0   0   0   0  78   0   0   0  61   0   0   0   0   0   0   0 
+  8   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+1 5 3 -1 
+Reverse   :
+0 0 0 2 
+Instruction? 0,store,41,56
+Moved frame 0 to swap slot 10
+Moved swap slot 9 to physical frame 0
+Stored value 56 at virtual address 41 (physical address 9)
+  0   0   0   0   0   0   0   0  99  56   0   0   0   0   0   0 
+ 10   1   1   1   2   1   1   1   0   1   1   1   0   0   0   0 
+  0   0   0   0  78   0   0   0  61   0   0   0   0   0   0   0 
+  8   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+Registers :
+1 5 3 -1 
+Reverse   :
+0 0 0 2 
+Instruction? 1,store,12,66
+Moved frame 1 to swap slot 4
+Moved swap slot 5 to physical frame 1
+Moved frame 3 to swap slot 6
+Moved swap slot 4 to physical frame 3
+Moved frame 2 to swap slot 9
+Moved swap slot 11 to physical frame 2
+Stored value 66 at virtual address 12 (physical address 44)
+  0   0   0   0   0   0   0   0  99  56   0   0   0   0   0   0 
+  2   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0  67   0   0   0   0   0  66   0   0   0 
+ 10   1   1   1   9   1   1   1   0   1   1   1   0   0   0   0 
+Registers :
+3 1 6 -1 
+Reverse   :
+0 1 1 0 
+Instruction? 2,store,1,54
+Moved frame 0 to swap slot 11
+Moved swap slot 6 to physical frame 0
+Moved frame 1 to swap slot 5
+Moved swap slot 8 to physical frame 1
+Stored value 54 at virtual address 1 (physical address 17)
+  1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0 
+  0  54   0   0   0   0   0  89   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0  67   0   0   0   0   0  66   0   0   0 
+ 10   1   1   1   9   1   1   1  11   1   1   1   0   0   0   0 
+Registers :
+3 5 0 -1 
+Reverse   :
+2 2 1 0 
+Instruction? e
